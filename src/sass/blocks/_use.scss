@@ -1,0 +1,43 @@
+.use {
+    margin-top: 126px;
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        margin-top: 60px;
+        gap: 13px;
+    }
+    &__item {
+        border: 1px solid #000;
+        padding: 30px 30px 25px 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 60%; 
+    }
+    &__picture {
+        margin: auto 0;
+    }
+    &__name {
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    &__text {
+        margin-top: 15px;
+        font-size: 12px; 
+    }
+}

@@ -1,19 +1,24 @@
 .about-me {
-    height: 846px;
     margin-top: 120px;
     .grid-container {
         display: grid;
-        grid-template-columns: 400px 570px;
-        grid-template-rows: 600px;
+        grid-template-columns: 400px 470px;
+        grid-template-rows: minmax(245px, auto) minmax(255px, auto);
         column-gap: 70px;
+        row-gap: 40px;
     }
-    &__second {
-        .grid-container {
-            display: grid;
-            grid-template-columns: 570px;
-            grid-template-rows: 300px 300px;
+    &__first {
+        grid-row: 1/3;
+        img {
+            width: 100%;
         }
     }
+    &__second {
+        .divider {
+            margin: 0;
+        }
+    }
+
     &__subtitle {
         position: relative;
         color: #000;
@@ -26,29 +31,30 @@
     &__title {
         color: #000;
     }
-    &__divider {
-        width: 60px;
-        height: 3px; 
-        background-color: $main-color;
-        margin-bottom: 20px;
-    }
     &__text {
         color: #000;
         font-size: 14px;
-        font-weight: 500; 
+        line-height: 21px;
+        margin-top: 20px; 
     }
     &__skills {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        row-gap: 20px;
+        column-gap: 50px;
     }
     &__items {
-        width: 200px;
+        display: grid;
+        grid-template-columns: 40px 200px;
+        column-gap: 20px;
+    }
+    &__mixin {
         position: relative;
-        img {
-            position: absolute;
-            top: 10px;
-            left: -30px;
-            z-index: 5;
+        padding: 15px 0 0 15px;
+        @include before_circle;
+        &:before {
+            top: 0;
         }
     }
     &__add-left {
@@ -56,7 +62,6 @@
         color: #000;
         font-weight: 700;
         z-index: 2;
-        @include long-before_circle;
     } 
     &__new-text {
         color: #000;

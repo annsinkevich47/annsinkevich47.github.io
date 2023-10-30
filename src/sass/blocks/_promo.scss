@@ -3,14 +3,16 @@
     position: relative;
     background: url(../img/background.svg) no-repeat 100%/cover;
     padding-top: 205px;
-    &__title {
+    .promo__title {
         width: 535px;
         margin-top: 10px;
+        color: $white-color
     }
-    &__subtitle {
+    .promo__subtitle {
         position: relative;
         padding-left: 10px;
         z-index: 2;
+        color: $white-color;
         @include before_circle;
     }
     &__btns {
