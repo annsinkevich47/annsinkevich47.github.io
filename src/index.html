@@ -94,13 +94,17 @@
     <section class="about-me">
         <div class="container">
             <div class="grid-container">
-                <div class="grid__blocks about-me__first">
-                    <img src="img/white_tiger.jpg" alt="photo">
+                <div class="about-me__first">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/white_tiger-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/white_tiger.jpg">
+                        <img src="img/white_tiger.jpg" alt="photo">
+                    </picture>
                 </div>
-                <div class="grid__blocks about-me__second">
+                <div class="about-me__second">
                     <div class="about-me__description">
                         <div class="title title_fz16 about-me__subtitle">Про меня</div>
-                        <div class="title about-me__title">Меня зовут Анна</div>
+                        <div class="title title_fz36 about-me__title">Меня зовут Анна</div>
                         <div class="divider"></div>
                         <p class="about-me__text">Я начинающий веб-разработчик, готовый с энтузиазмом приступить к приступать к любой профильной работе, обучению новым знаниям и получению самого разного опыта в сфере программирования! На данный момент, я изучала следующие направления:</p>
                     </div>
@@ -127,12 +131,12 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
-
     <section class="resume">
         <div class="container">
-            <h2 class="title title_fz16 resume__title">Опыт</h2>
-            <div class="title resume__subtitle">Чем я буду полезна</div>
+            <h2 class="title title_fz16 title__section-title">Опыт</h2>
+            <div class="title title_fz36 title__section-subtitle">Чем я буду полезна</div>
             <div class="divider"></div>
 
             <div class="resume__wrapper">
@@ -213,10 +217,11 @@
             </div>
         </div>
     </section>
+    
     <section class="use">
         <div class="container">
-            <h2 class="title title_fz16 use__title">Навыки</h2>
-            <div class="title use__subtitle">Что я использую в работе</div>
+            <h2 class="title title_fz16 title__section-title">Навыки</h2>
+            <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
             <div class="divider"></div>
 
             <div class="use__wrapper">
@@ -268,6 +273,151 @@
                         <div class="use__name">Mongo.db</div>
                         <div class="use__text">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
                     </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="scale">
+        <div class="container">
+            <div class="scale__wrapper">
+                <div class="scale__item">
+                    <div class="scale__title">Создание сайтов <span>95%</span></div>
+                    <div class="scale__full"></div>
+                    <div class="scale__empty"></div>
+                </div>
+                <div class="scale__item">
+                    <div class="scale__title">Работа с данными <span>100%</span></div>
+                    <div class="scale__full"></div>
+                    <div class="scale__empty"></div>
+                </div>
+                <div class="scale__item">
+                    <div class="scale__title">Креативность <span>93%</span></div>
+                    <div class="scale__full"></div>
+                    <div class="scale__empty"></div>
+                </div>
+                <div class="scale__item">
+                    <div class="scale__title">Создание дизайна <span>85%</span></div>
+                    <div class="scale__full"></div>
+                    <div class="scale__empty"></div>
+                </div>
+                <div class="scale__item">
+                    <div class="scale__title">Soft skills <span>90%</span></div>
+                    <div class="scale__full"></div>
+                    <div class="scale__empty"></div>
+                </div>
+                <div class="scale__item">
+                    <div class="scale__title">Создание приложений <span>90%</span></div>
+                    <div class="scale__full"></div>
+                    <div class="scale__empty"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="title title_fz16 title__section-title">Портфолио</h2>
+            <div class="title title_fz36 title__section-subtitle">Мои работы</div>
+            <div class="divider"></div>
+
+            <div class="portfolio__wrapper">
+                <a href="#" class="portfolio__item">
+                    <img src="img/uber.jpg" alt="uber">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/pulse.jpg" alt="puls">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/bread.jpg" alt="bread">
+                </a>
+                <a href="#" class="portfolio__item vertical">
+                    <img src="img/plans.jpg" alt="plans">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/ipad.jpg" alt="ipad">
+                </a>
+                <a href="#" class="portfolio__item horizonal">
+                    <img src="img/mac.jpg" alt="mac">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="price">
+        <div class="container">
+            <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
+            <div class="divider"></div>
+            <div class="price__wrapper">
+                <div class="price__item">
+                    <div class="title title_fz14 price__title">Landing-page</div>
+                    <div class="title title_fz14 price__number">от 8000 руб.</div>
+                    <div class="price__subtitle">Одностраничный сайт для презентации услуг/товаров/...</div>
+                </div>
+                <div class="price__item">
+                    <div class="title title_fz14 price__title">Корпоративный сайт</div>
+                    <div class="title title_fz14 price__number">от 20000 руб.</div>
+                    <div class="price__subtitle">Сайт для вашего бизнеса или компании</div>
+                </div>
+                <div class="price__item">
+                    <div class="title title_fz14 price__title">Интернет-магазин</div>
+                    <div class="title title_fz14 price__number">от 30000 руб.</div>
+                    <div class="price__subtitle">Инструмент для ваших продаж в сети</div>
+                </div>
+                <div class="price__item">
+                    <div class="title title_fz14 price__title">Web-приложение</div>
+                    <div class="title title_fz14 price__number">от 28000 руб.</div>
+                    <div class="price__subtitle">Приложение внутри браузера для лучшего комфорта</div>
+                </div>
+                <div class="price__item">
+                    <div class="title title_fz14 price__title">Android/IOS Приложение</div>
+                    <div class="title title_fz14 price__number">от 25000 руб.</div>
+                    <div class="price__subtitle">Приложение для смартфона любой ОС</div>
+                </div>
+                <div class="price__item">
+                    <div class="title title_fz14 price__title">Дизайн</div>
+                    <div class="title title_fz14 price__number">Индивидуально</div>
+                    <div class="price__subtitle">Создам дизайн для вашего сайта/приложения...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__img">
+                    <img src="img/white_tiger.jpg" alt="photo">
+                </div>
+                <div class="contacts__descr">
+                    <div class="title title_fz16 contacts__title">Контакты</div>
+                    <div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
+                    <div class="divider"></div>
+
+                    <div class="contacts__social">
+                        <a href="" class="contacts__link">
+                            <img src="icons/Telegram.svg" alt="Telegram">
+                        </a>
+                    </div>
+                    <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
+
+                    <form action="" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text" ></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/src/policy.html">политикой конфеденциальности</a></span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

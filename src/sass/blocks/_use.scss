@@ -1,23 +1,10 @@
 .use {
     margin-top: 126px;
-    &__title {
-        text-align: center;
-        position: relative;
-        @include before_circle;
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
-
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 270px);
         grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: minmax(270px, auto);
         margin-top: 60px;
         gap: 13px;
     }

@@ -3,10 +3,12 @@
     position: relative;
     background: url(../img/background.svg) no-repeat 100%/cover;
     padding-top: 205px;
-    .promo__title {
+    &__title {
         width: 535px;
-        margin-top: 10px;
-        color: $white-color
+        margin-top: 10px;    
+    }
+    .title {
+        color: $white-color;
     }
     .promo__subtitle {
         position: relative;

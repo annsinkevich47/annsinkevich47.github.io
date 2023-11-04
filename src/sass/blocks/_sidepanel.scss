@@ -11,7 +11,7 @@
     &__divider {
         width: 2px;
         height: 70px;
-        background-color: $white-color;
+        background-color: $green-color;
         align-items: center;
     }
     &__text {
@@ -21,7 +21,7 @@
             transform: rotate(-90deg) translate(-30%, -260%);
             display: block;
             width: 150px;
-            color: $white-color;
+            color: $green-color;
             text-align: right;
             margin-top: 30px;
         }
